@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {ClientesService } from '../../../navBar.service'
 
 @Component({
   selector: 'app-presentacion',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./presentacion.component.scss']
 })
 export class PresentacionComponent {
+  constructor(public serviceNavBar : ClientesService){}
+
 
 }
