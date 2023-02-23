@@ -1,7 +1,7 @@
-<main ngClass="{'menu-active': navbarFlag, 'menu-hover': !navbarFlag}">
+<main [ngClass]="{'menu-active': serviceNavBar.navBarState, 'menu-hover': !serviceNavBar.navBarState}">
   <section>
    <br><br><br>
-    <h1 (click)="serviceNavBar.flagNavbar('Adios')">&larr; DIAGONAL SHAPED NAV</h1>
+    <h1 (click)="serviceNavBar.flagNavbar()">&larr; DIAGONAL SHAPED NAV</h1>
     <br>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 

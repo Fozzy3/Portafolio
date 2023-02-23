@@ -1,6 +1,5 @@
 
-<body>
-  <nav ngClass="{'menu-active': navbarFlag, 'menu-hover': !navbarFlag}" (click)="serviceNavBar.flagNavbar('Hola')">
+  <nav [ngClass]="{'menu-active': serviceNavBar.navBarState, 'menu-hover': !serviceNavBar.navBarState}" (click)="serviceNavBar.flagNavbar()">
     <h1>NAVBAR</h1>
     <ul>
       <li><a routerLink="/web/presentacion">Web's Presentacion</a></li>
@@ -15,6 +14,5 @@
   </nav>
 
   <router-outlet></router-outlet>
-</body>
 
 
