@@ -1,4 +1,6 @@
 
+<section class="initial">
+
   <nav [ngClass]="{'menu-active': serviceNavBar.navBarState, 'menu-hover': !serviceNavBar.navBarState}" (click)="serviceNavBar.flagNavbar()">
     <h1>NAVBAR</h1>
     <ul>
@@ -15,4 +17,5 @@
 
   <router-outlet></router-outlet>
 
+</section>
 

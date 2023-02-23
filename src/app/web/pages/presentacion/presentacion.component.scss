@@ -35,10 +35,7 @@ nav h1 {
   background-color: #353441;
   cursor: pointer;
 }
-nav h1:hover {
-  color: #353441;
-  background: #fff;
-}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -91,17 +88,14 @@ main:after {
 }
 main.menu-active {
   border-radius: 0.001px;
-  transform: translateX(16em) rotateY(15deg);
+  transform: translateX(16em) rotate(-15deg);
 }
 main.menu-active:after {
   visibility: visible;
   opacity: 1;
   transition: opacity 150ms ease-out, visibility 0s;
 }
-main.menu-hover {
-  border-radius: 0.001px;
-  transform: translateX(1em) rotateY(1deg);
-}
+
 main section {
   position: absolute;
   top: 0;
