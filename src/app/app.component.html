@@ -1,17 +1,14 @@
-
 <section class="initial">
 
   <nav [ngClass]="{'menu-active': serviceNavBar.navBarState, 'menu-hover': !serviceNavBar.navBarState}" (click)="serviceNavBar.flagNavbar()">
     <h1>NAVBAR</h1>
     <ul>
-      <li><a routerLink="/web/presentacion">Web's Presentacion</a></li>
-      <li><a routerLink="/web/projects">Web's Proyectos</a></li>
-      <br>
-      <li><a routerLink="/gaming/presentation">Game's Presentacion</a></li>
-      <li><a routerLink="/gaming/services">Game's Servies</a></li>
-      <br>
-      <li><a routerLink="/applications/presentation">App's Presentacion</a></li>
-      <li><a routerLink="/applications/services">App's Servies</a></li>
+      <li style="--i:6;" ><a routerLink="/web/presentacion">Web's Presentacion</a></li>
+      <li style="--i:5;" ><a routerLink="/web/projects">Web's Proyectos</a></li>
+      <li style="--i:4;" ><a routerLink="/gaming/presentation">Game's Presentacion</a></li>
+      <li style="--i:3;" ><a routerLink="/gaming/services">Game's Servies</a></li>
+      <li style="--i:2;" ><a routerLink="/applications/presentation">App's Presentacion</a></li>
+      <li style="--i:1;" ><a routerLink="/applications/services">App's Servies</a></li>
     </ul>
   </nav>
 
