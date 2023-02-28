@@ -1,3 +1,7 @@
+  $blue-color: #060454;
+  $orange-color: #fc7171;
+
+
 nav,
 main {
   transition: transform 150ms ease-out;
@@ -142,13 +146,13 @@ nav.menu-active {
 			animation-direction: alternate;
 
 			&.white {
-				background-color: white;
-				box-shadow: 0px 50px 50px 0px transparentize(white, 0.7);
+				background-color: $blue-color;
+				box-shadow: 0px 50px 50px 0px transparentize( $blue-color , 0.7);
 			}
 
 			&.red {
-				background-color: #fc7171;
-				box-shadow: 0px 50px 50px 0px transparentize(#fc7171, 0.7);
+				background-color: $orange-color;
+				box-shadow: 0px 50px 50px 0px transparentize($orange-color, 0.7);
 				animation-delay: 0.2s;
 			}
 		}
@@ -215,7 +219,7 @@ nav.menu-active {
 				margin-left: -30px;
 
 				&.white {
-					border: 1px solid white;
+					border: 1px solid $blue-color;
 				}
 
 				&.big {
@@ -224,7 +228,7 @@ nav.menu-active {
 					margin-left: 0px;
 
 					&.white {
-						border: 2px solid white;
+						border: 2px solid $blue-color;
 					}
 				}
 			}
@@ -343,7 +347,7 @@ nav.menu-active {
 	}
 }
 
-@keyframes boom-disc {
+  @keyframes boom-disc {
 	0% {
 		opacity: 0;
 	}
