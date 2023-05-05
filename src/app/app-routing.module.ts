@@ -5,15 +5,15 @@ const routes: Routes = [
 
   {
     path: 'web',
-    loadChildren: () => import('./web/web.module').then(m => m.WebModule)
+    loadChildren: () => import('./view/web/web.module').then(m => m.WebModule)
   },
   {
     path: 'gaming',
-    loadChildren: () => import('./gaming/gaming.module').then(m => m.GamingModule)
+    loadChildren: () => import('./view/gaming/gaming.module').then(m => m.GamingModule)
   },
   {
     path: 'applications',
-    loadChildren: () => import('./applications/applications.module').then(m => m.ApplicationsModule)
+    loadChildren: () => import('./view/applications/applications.module').then(m => m.ApplicationsModule)
   },
   {
     path: '**',

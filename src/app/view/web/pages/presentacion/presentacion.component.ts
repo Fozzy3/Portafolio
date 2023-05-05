@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {ClientesService } from '../../../navBar.service'
 
 
 @Component({
@@ -8,7 +7,5 @@ import {ClientesService } from '../../../navBar.service'
   styleUrls: ['./presentacion.component.scss']
 })
 export class PresentacionComponent {
-  constructor(public serviceNavBar : ClientesService){}
-
-
+  constructor(){}
 }
