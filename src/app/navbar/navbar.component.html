@@ -1,10 +1,30 @@
-<h1>NAVBAR</h1>
-<ul>
-  <li><a routerLink="/web/presentacion">Web's Presentacion</a></li>
-  <li><a routerLink="/web/projects">Web's Proyectos</a></li>
-  <li><a routerLink="/gaming/presentation">Game's Presentacion</a></li>
-  <li><a routerLink="/gaming/services">Game's Servies</a></li>
-  <li><a routerLink="/applications/presentation">App's Presentacion</a></li>
-  <li><a routerLink="/applications/services">App's Servies</a></li>
-</ul>
+
+<div [ngClass]="this.active ? 'active' : ''" class="sidebar">
+  <div class="logo_content">
+    <div class="logo">
+      <i class="bx bxs-heart"></i>
+      <div class="logo_name">Hello Diet</div>
+    </div>
+    <i class="bx bx-menu" (click)="this.active = !this.active"></i>
+  </div>
+
+  <div class="src">
+    <i class="bx bx-search"></i>
+    <input type="text" placeholder="Search.." />
+  </div>
+
+  <ul class="nav">
+    <li *ngFor="let item of navbar">
+      <a routerLink="{{ item.routerLink }}" (click)="this.active = false" >
+        <i [class]="item.icon"></i>
+        <span class="link_name">{{ item.name }}</span>
+      </a>
+      <span class="tooltip">{{ item.name }}</span>
+    </li>
+  </ul>
+</div>
+<br>
+
+<div class="home_content">
   <router-outlet></router-outlet>
+</div>
